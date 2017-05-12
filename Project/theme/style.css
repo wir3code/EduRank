@@ -1,0 +1,724 @@
+body
+{
+    background-color: #eaecf4;
+    color: #000000;
+    font-family: arial;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+th
+{
+    text-align: left;
+}
+
+.textInput1 /*Repetitive, fix in site*/
+{
+    background-color: #f7f8fb;
+    border: 1px solid #6a78b0;
+    border-radius: 5px;
+}
+
+#navigationTop
+{
+    background-color: rgb(32, 62, 99);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    float: left;
+}
+
+#landing
+{
+    padding: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    background-color: #f8f9fc;
+    border: 1px solid #b6bfda;
+    border-radius: 15px;
+    margin-top: 10%;
+}
+
+#landing .input1
+{
+    background-color: #f7f8fb;
+    border: 1px solid #6a78b0;
+    border-radius: 5px;
+    height: 30px;
+    width: 400px;
+}
+
+#landing input:hover
+{
+    border: 2px solid blue;
+}
+
+#landing .input2
+{
+    background-color: #d5daea;
+    border: 1px solid #FFFFFF;
+    height: 25px;
+    width: 150px;
+}
+
+#landing a
+{
+    font-size: 15px;
+    color: #000000;
+}
+
+#navigationTop ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigationTop li
+{
+    display: inline;
+    float: left;
+}
+
+#navigationTop a
+{
+    width: auto;
+    display: block;
+    padding: 15px;
+    color: rgb(72, 130, 187);
+    font-family: arial;
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#navigationTop a:hover
+{
+    background-color: rgb(53, 82, 149);
+    color: rgb(238, 238, 199);
+}
+
+.subMenu
+{
+    width: 15%;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    background: rgb(32, 62, 99);
+}
+
+.subMenu li
+{
+    display: block;
+}
+
+.subMenu li a
+{
+    display: block;
+}
+
+#navigationTop li:hover .subMenu
+{
+    z-index: 1;
+    opacity: 1;
+}
+
+#navigationTop .navRight
+{
+    float: right;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+#navigationTop .navRight a
+{
+    color: #FFFFFF;
+    font-size: 18px !important;
+}
+
+#container
+{
+    width: 100%;
+}
+
+#menuLeft
+{
+    background-color: rgb(55, 51, 66);
+    width: 17%;
+    float: left;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+}
+
+#menuLeft p
+{
+    display: inline;
+    padding-left: 15px;
+}
+
+#menuLeft a
+{
+    color: #FFFFFF;
+}
+
+#menuLeft .section
+{
+    border-bottom: 1px solid rgb(92, 85, 111);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#menuLeft input
+{
+    background-color: rgb(104, 96, 121);
+    border: none;
+    border-radius: 5px;
+    color: #87c9ed;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+#menuLeft input:hover
+{
+    border: 1px solid #49a6eb;
+    /*border: 1px solid #f72cfc; */
+}
+
+.menuHeader
+{
+    text-align: center;
+    border-bottom: 1px solid;
+    border-color: #5C5C5C;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(100, 115, 134);
+    margin-bottom: 10px;
+    color: #4bfc85;
+}
+
+.login_error
+{
+    display: inline;
+    text-align: center;
+    color: #f77575;
+    font-size: 16px;
+}
+
+#main
+{
+    width: 80%;
+    float: right;
+    text-align: left;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* Start course CSS */
+
+#challengeView
+{
+    background-color: #FFFFFF;
+    border: 1px solid #d4d4d4;
+    box-shadow: 8px 7px 5px #888888;
+    padding: 5px;
+}
+
+#challengeView .header
+{
+    background-color: #ed995a;
+    color: #FFFFFF;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#challengeView td
+{
+    font-size: 25px;
+    border-bottom: 1px solid #75aafb;
+    padding-top: 50px;
+}
+
+
+#courseView
+{
+    background-color: #FFFFFF;
+    border: 1px solid #d4d4d4;
+    box-shadow: 8px 7px 5px #888888;
+    padding: 5px;
+}
+
+#courseView .header
+{
+    background-color: #ed995a;
+    color: #FFFFFF;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#courseView table
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#courseView .td1
+{
+    padding-bottom: 100px;
+}
+
+#courseView .td1 a
+{
+    color: black;
+}
+
+.sections
+{
+    width: 100%;
+    border-collapse:separate; 
+    border-spacing:5em;
+}
+
+.sections tr
+{
+    background-color: #ececec;
+    border-top: 1px solid #d3d3d3;
+}
+
+.sections td
+{
+    text-align: left;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 27px;
+}
+
+.sections td a
+{
+    color: #000000;
+}
+
+
+
+/* End course CSS */
+
+
+
+
+
+/* Start profile CSS */
+
+#rankProfile
+{
+    width: 100%;
+}
+
+#profileView
+{
+    width: 100%;
+    padding-top: 0px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f9fc;
+    border: 1px solid #b6bfda;
+    box-shadow: 1px 7px 5px #888888;
+}
+
+.profileLinks
+{
+    border-bottom: 2px solid #6f8fff;
+    width: 100%;
+}
+
+.profileLinks a
+{
+    color: #000000;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 19px;
+}
+
+.profileLinks a:hover
+{
+    border-bottom: 2px solid #000000;
+}
+
+.profileHeader
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-weight: bold;
+    background-color: #707070;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#profileEditor
+{
+    padding: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    background-color: #f8f9fc;
+    border: 1px solid #b6bfda;
+    border-radius: 15px;
+}
+
+#profileEditor .input1
+{
+    background-color: #f7f8fb;
+    border: 1px solid #6a78b0;
+    border-radius: 5px;
+    height: 30px;
+    width: 400px;
+}
+
+#profileEditor input:hover
+{
+    border: 2px solid blue;
+}
+
+#profileEditor .input2
+{
+    background-color: #f7f8fb;
+    border: 1px solid #6a78b0;
+    width: 100%;
+}
+
+#profileEditor a
+{
+    font-size: 15px;
+    color: #000000;
+}
+
+.statHead
+{
+    border: 1px dotted #41aae2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#trail
+{
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #b4b4b4;
+    color: #000000;
+    width: 83%;
+    text-align: left;
+    position: relative;
+    float: right;
+    padding: 3px;
+    box-shadow: 1px 7px 5px #888888;
+}
+
+#trail a
+{
+    color: #000000;
+}
+
+
+
+
+
+
+
+/*  Start news CSS    */
+
+.newsTitle
+{
+    border: 1px solid #68a0df;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: none;
+    background-color: #434563;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.newsTitle a
+{
+    color: #FFFFFF;
+}
+
+.newsContent
+{
+    border: 1px solid #68a0df;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: bold;
+    color: #000000;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.newsContent a
+{
+    color: #000000;
+}
+
+.userComment
+{
+    background-color: #0062c4;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 60px;
+    padding: 20px;
+    width: 50%;
+    word-wrap: normal;
+}
+
+.userCommentTwo
+{
+    background-color: #10e604;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 35px;
+    border-radius: 60px;
+    padding: 20px;
+    width: 50%;
+    word-wrap: normal;
+}
+
+.commentBox
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.commentBox textarea
+{
+    text-align: left;
+    color: #000000;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border: 1px solid #0062c4;
+    width: 75%;
+    height: 250px;
+}
+
+.commentBox input
+{
+    border: 1px solid #0062c4;
+    color: #000000;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*  End news CSS    */
+
+
+
+
+
+
+
+
+/* Start mail CSS */
+
+#mailMenu
+{
+    width: 100%;
+    border-bottom: 2px solid #6f8fff;
+    margin: 0px;
+}
+
+.mailMenuItem
+{
+    padding-right: 25px;
+    color: #000000;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+#mailMenu a:hover
+{
+    border-bottom: 2px solid #000000;
+    color: #6f8fff;
+}
+
+#mailList
+{
+    width: 100%;
+}
+
+.mailListItem
+{
+    width: 100%;
+    border-bottom: 1px solid #209bff;
+    margin-bottom: 5px;
+}
+
+#mailView
+{
+    background-color: #10e604;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 35px;
+    border-radius: 60px;
+    padding: 20px;
+    width: 70%;
+}
+
+#mailView td
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#mailCompose
+{
+    width: 100%;
+    text-align: center;
+}
+
+#mailCompose input
+{
+    background-color: #f5f5f5;
+    color: #000000;
+    border: 1px solid #d6d6d6;
+    width: 75%;
+}
+
+#mailCompose input:hover
+{
+    border-color: #5199f0;
+}
+
+#mailCompose textarea
+{
+    background-color: #f5f5f5;
+    color: #000000;
+    border: 1px solid #d6d6d6;
+    width: 100%;
+}
+
+#mailCompose textarea:hover
+{
+    border: 1px solid #5199f0;
+}
+
+
+/* End mail CSS */
+
+
+
+
+
+
+#grades
+{
+    
+}
+
+#grades table
+{
+
+}
+
+#legend
+{
+    background-color: #b4d1e9;
+}
+
+#grades .td1
+{
+    background-color: #e0e0e0;
+}
+
+#grades .td2
+{
+    background-color: #b4d1e9;
+}
+
+#rank_view
+{
+    
+}
+
+.rank
+{
+    border-bottom: 1px solid #939bbd;
+    padding: 15px;
+}
+
+#infostats
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.status_online
+{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 75px 10px 75px;
+    background-color: #ee6060;
+    display: inline;
+    border-radius: 12px;
+    font-size: 32px;
+    margin-right: 30px;
+}
+
+.status_courses
+{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 75px 10px 75px;
+    background-color: #606dee;
+    display: inline;
+    border-radius: 12px;
+    font-size: 32px;
+    margin-right: 30px;
+}
+
+.status_points
+{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 75px 10px 75px;
+    background-color: #6dee60;
+    display: inline;
+    border-radius: 12px;
+    font-size: 32px;
+    margin-right: 30px;
+}
+
